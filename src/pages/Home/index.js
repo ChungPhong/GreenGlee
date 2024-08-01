@@ -22,13 +22,25 @@ function Home() {
             </p>
           </div>
           <div className="main__btn">
-            <a className="btn btn__shopee" href="https://shopee.vn/">
+            <a
+              target="_blank"
+              className="btn btn__shopee"
+              href="https://shopee.vn/"
+            >
               Shopee
             </a>
-            <a className="btn  btn__tiki" href="https://tiki.vn/">
+            <a
+              target="_blank"
+              className="btn  btn__tiki"
+              href="https://tiki.vn/"
+            >
               Tiki
             </a>
-            <a className="btn  btn__amazon" href="https://Amazon.vn/">
+            <a
+              target="_blank"
+              className="btn  btn__amazon"
+              href="https://Amazon.vn/"
+            >
               Amazon
             </a>
           </div>

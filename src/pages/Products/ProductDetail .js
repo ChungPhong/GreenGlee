@@ -4,6 +4,7 @@ import green from "../../components/img/greenjoy.jpg";
 import "./ProductDetail.css";
 import { useRef, useState } from "react";
 import Swal from "sweetalert2";
+import GoBack from "../../components/GoBack";
 
 function ProductDetail() {
   const { productId } = useParams();
@@ -50,6 +51,7 @@ function ProductDetail() {
       <div className="product-detail">
         <img src={green} alt="greenjoy" />
       </div>
+      <GoBack />
       <div className="product__detail-main content">
         <div className="detail__main-left">
           <img src={product.imageUrl} alt={product.title} />
