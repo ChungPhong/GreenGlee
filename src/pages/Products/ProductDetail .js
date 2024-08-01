@@ -9,7 +9,7 @@ function ProductDetail() {
   const { productId } = useParams();
   console.log(productId);
   const product = productData.find((item) => item.id === productId);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(1);
   const inputRef = useRef();
   const inputRef1 = useRef();
   const inputRef2 = useRef();
@@ -30,7 +30,8 @@ function ProductDetail() {
         showConfirmButton: false,
         timer: 1500,
       });
-      inputRef2.current.value = 0;
+      setValue(1);
+      inputRef2.current.value = 1;
     }
   };
   const handleComment = () => {

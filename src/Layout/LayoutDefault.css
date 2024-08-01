@@ -43,13 +43,12 @@ a {
   cursor: pointer;
 }
 .header-main img {
-  width: 120px;
+  width: 200px;
   height: 100px;
   object-fit: cover;
 }
 .header-list {
   display: flex;
-  margin-left: 60px;
 }
 .header-list a {
   margin-right: 5px;
@@ -326,7 +325,7 @@ a {
   position: relative;
 }
 .buyt__title {
-  margin-top: 28px;
+  margin-top: 10px;
   font-size: 28px;
 }
 /* main-value  */

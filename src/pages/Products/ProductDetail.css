@@ -20,6 +20,7 @@
   width: 450px;
   height: 500px;
   object-fit: cover;
+  border: 1px solid #ddd;
 }
 .detail__main-right {
   flex: 1;
@@ -386,6 +387,5 @@
   width: 100px;
   height: 100px;
 }
-.detail__preserve-box  {
-  
+.detail__preserve-box {
 }

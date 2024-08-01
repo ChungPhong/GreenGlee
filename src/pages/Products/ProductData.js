@@ -5,7 +5,7 @@ const productData = [
     price: "616,500₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612220203_5088_1686582123.8827.webp&w=1920&q=75",
+      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F600x600%2F20230612220612_5088_1686582372.9702.webp&w=1920&q=75",
     description: "(17cm)",
   },
   {
@@ -14,7 +14,7 @@ const productData = [
     price: "616,500₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612222234_5088_1686583354.1957.webp&w=1920&q=75",
+      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F600x600%2F20230612222343_5088_1686583423.7407.webp&w=1920&q=75",
     description: "(13cm)",
   },
   {
@@ -23,7 +23,7 @@ const productData = [
     price: "1,015,000₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612223557_5088_1686584157.0571.webp&w=1920&q=75",
+      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F600x600%2F20230612223757_5088_1686584277.8862.webp&w=1920&q=75",
     description: "(8cm)",
   },
   {
@@ -32,7 +32,7 @@ const productData = [
     price: "1,377,500₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612230133_5088_1686585693.7982.webp&w=1920&q=75",
+      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F600x600%2F20230612230802_5088_1686586082.3817.webp&w=1920&q=75",
     description: "(18cm)",
   },
   {
@@ -41,16 +41,16 @@ const productData = [
     price: "1,450,000₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612232931_5088_1686587371.7755.webp&w=1920&q=75",
+      "https://growgreen.com.vn/wp-content/uploads/2022/04/%C4%90%C4%A9a-mo-cau-vu%C3%B4ng-25cm.jpg",
     description: "(16cm)",
   },
   {
     id: "item-6",
-    title: "Set đĩa/dĩa vuông mo cau Green Joy (16cm)",
+    title: "Set tô tròn mo cau Green Joy (16cm)",
     price: "2,030,000₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612233859_5088_1686587939.4126.webp&w=1920&q=75",
+      "https://ipak.vn/wp-content/uploads/2020/09/Chen-mo-cau-tron-300ml-4.jpg",
     description: "(16cm)",
   },
   {
@@ -59,7 +59,7 @@ const productData = [
     price: "2,102,500₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612222931_5088_1686583771.8661.webp&w=1920&q=75",
+      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F600x600%2F20230612223253_5088_1686583973.1829.webp&w=1920&q=75",
     description: "(28cm)",
   },
   {
@@ -67,8 +67,7 @@ const productData = [
     title: "Set đĩa/dĩa mo cau vuông Green Joy (20cm)",
     price: "2,102,500₫",
     Category: "Đồ dùng từ mo cau",
-    imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612232542_5088_1686587142.1113.webp&w=1920&q=75",
+    imageUrl: "https://treshop.vn/wp-content/uploads/2018/04/DV25-1.jpg",
     description: "(20cm)",
   },
   {
@@ -77,7 +76,7 @@ const productData = [
     price: "2,102,500₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612234550_5088_1686588350.4711.webp&w=1920&q=75",
+      "https://imgcdn.thitruongsi.com/tts/rs:fill:600:0:1:1/g:sm/plain/file://product/2020/12/30/046d2200-4a67-11eb-a543-956151782b3c.jpg",
     description: "(20cm)",
   },
   {
@@ -85,8 +84,7 @@ const productData = [
     title: "Set đĩa/dĩa tròn mo cau Green Joy (đường kính 25cm)",
     price: "2,392,500₫",
     Category: "Đồ dùng từ mo cau",
-    imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612224414_5088_1686584654.9765.webp&w=1920&q=75",
+    imageUrl: "https://laxanh.net/wp-content/uploads/2020/04/w2-1.jpg",
     description: "(25cm)",
   },
   {
@@ -95,7 +93,7 @@ const productData = [
     price: "2,537,500₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612220203_5088_1686582123.8827.webp&w=1920&q=75",
+      "https://down-vn.img.susercontent.com/file/08220f88258338a67d39b4e58c2ea4dd",
     description: "(25cm)",
   },
   {
@@ -104,7 +102,7 @@ const productData = [
     price: "2,827,500₫",
     Category: "Đồ dùng từ mo cau",
     imageUrl:
-      "https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.com%2F500x500%2F20230612233405_5088_1686587645.799.webp&w=1920&q=75",
+      "https://imgcdn.thitruongsi.com/tts/rs:fill:600:0:1:1/g:sm/plain/file://product/2020/12/30/04702f40-4a67-11eb-bfb7-2d5d0e709645.jpg",
     description: "(16cm)",
   },
 ];

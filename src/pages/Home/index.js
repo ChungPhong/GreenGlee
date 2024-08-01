@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import green from "../../components/img/greenjoy.jpg";
+import bg1 from "../../components/img/bg1.jpg";
 import "../../Layout/LayoutDefault.css";
 function Home() {
   return (
@@ -54,7 +55,7 @@ function Home() {
       </div>
       {/* main origin */}
       <div className="main__origin">
-        <img src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2F20221213092023_29_1670898023.9098.png&w=1920&q=75" />
+        <img src={bg1} />
         <div className="main__origin-content">
           <h4 className="main__origin-title">Nguồn gốc của Green Glee</h4>
           <p className="main__origin-desc">
@@ -64,7 +65,6 @@ function Home() {
             <strong>GREEN Glee</strong> có nghĩa là làm điều gì đó tốt đẹp cho
             cá nhân, cho tổ chức, môi trường và cộng đồng.
           </p>
-          <a href="#!">Xem thêm</a>
         </div>
       </div>
       {/* main vision */}
@@ -218,8 +218,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-  
 
       {/* main-value */}
       <div className="main-value">

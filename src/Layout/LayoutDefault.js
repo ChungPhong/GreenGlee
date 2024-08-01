@@ -1,5 +1,6 @@
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink, Outlet } from "react-router-dom";
+import logo1 from "../../src/components/img/logo1.png";
 import "./LayoutDefault.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -27,10 +28,7 @@ function LayoutDefault() {
       <header className="header">
         <div className="header-main">
           <a onClick={handleLogoClick}>
-            <img
-              alt="logo"
-              src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2F20221122113803_29_1669091883.8649.png&w=1920&q=75"
-            />
+            <img alt="logo" src={logo1} />
           </a>
 
           <ul className="header-list">
@@ -75,7 +73,7 @@ function LayoutDefault() {
         <Outlet />
       </main>
       <footer className="footer">
-        Copyright © 2023 Green Glee. All Rights Reserved. Built with Eraweb.
+        Copyright © 2024 Green Glee. All Rights Reserved. Built with Eraweb.
       </footer>
     </>
   );
