@@ -44,6 +44,7 @@ function ProductDetail() {
     inputRef.current.value = "";
     inputRef1.current.value = "";
   };
+
   return (
     <>
       <div className="product-detail">

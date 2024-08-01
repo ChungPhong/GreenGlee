@@ -387,5 +387,7 @@
   width: 100px;
   height: 100px;
 }
-.detail__preserve-box {
+.detail__preserve-box p {
+  font-size: 20px;
+  margin-top: 10px;
 }

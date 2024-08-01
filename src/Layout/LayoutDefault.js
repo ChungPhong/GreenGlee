@@ -49,7 +49,7 @@ function LayoutDefault() {
             <Link>
               <FaSearch />
             </Link>
-            <Link>
+            <Link title="Khách vip">
               <FaUser />
             </Link>
             <Link>
