@@ -9,8 +9,8 @@ function Sustainability() {
       </div>
       <div className="sustainability-corevalues content">
         <p className="corevalues__title">
-          Giá trị cốt lõi của Green Joy luôn kết nối với các tiêu chí phát triển
-          bền vững của Liên Hiệp Quốc.
+          Giá trị cốt lõi của Green Glee luôn kết nối với các tiêu chí phát
+          triển bền vững của Liên Hiệp Quốc.
         </p>
         <div className="corevalues__list">
           <div className="corevalues__item">

@@ -1,0 +1,391 @@
+.product-detail img {
+  width: 100%;
+  height: 293px;
+  object-fit: cover;
+}
+.product__detail-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.detail__main-left {
+  width: 48%;
+}
+.detail__main-left h2 {
+  margin-top: 30px;
+  font-size: 30px;
+}
+.detail__main-left img {
+  border-radius: 5px;
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+}
+.detail__main-right {
+  flex: 1;
+}
+.detail__main-right h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+.detail__main-right .detail__main-category {
+  margin-top: 30px;
+}
+.detail__main-right .detail__main-category {
+  font-size: 20px;
+}
+.detail__main-right .detail__main-category a {
+  color: #006c00;
+}
+.detail__main-value {
+  margin-top: 20px;
+  font-size: 36px;
+  color: #6ebf49;
+  font-weight: 600;
+}
+.detail__main-packaging::after {
+  content: "✓";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  bottom: 0;
+  right: 0;
+  font-size: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail__main-packaging {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e5e5e5dd;
+  border: 2px solid red;
+  position: relative;
+  cursor: pointer;
+}
+.detail__main-desc {
+  margin-top: 30px;
+  color: #333333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.detail__main-desc {
+  font-size: 20px;
+  color: #333333;
+}
+.detail__main-button {
+  margin-top: 30px;
+  border: 1px solid #000;
+  display: inline-block;
+}
+.detail__main-button input {
+  width: 60px;
+  padding: 10px 0;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.detail__main-button button {
+  background: #fff;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-right: 1px solid #000;
+  transition: background-color 0.5s ease-in-out;
+}
+.detail__main-button button:hover {
+  background-color: #6ebf49;
+}
+.detail__main-button .btn-active {
+  border-right: none;
+  border-left: 1px solid #000;
+}
+.detail__main-quatiny {
+  margin-top: 30px;
+}
+
+/* From uiverse.io by @Ali-Tahmazi99 */
+.detail__main-buy {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.detail__main-buy::before,
+.detail__main-buy::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+/* trái */
+.detail__main-buy::before {
+  left: -10px;
+  background: #6ebf49;
+}
+/* phải */
+.detail__main-buy::after {
+  right: -10px;
+  background: #6ebf49;
+}
+
+.detail__main-buy:hover::before,
+.detail__main-buy:hover::after {
+  width: 58%;
+}
+
+.detail__main-buy:hover span {
+  color: #000;
+  transition: 0.3s;
+}
+
+.detail__main-buy span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+
+/* star */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #666;
+  --fill: #ffc73a;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 2rem;
+  height: 2rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+/* Đánh giá */
+.button {
+  appaerance: none;
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+
+  border-radius: 10px;
+}
+
+.modal__header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal__body {
+  padding: 1rem 0;
+}
+
+.modal__footer {
+  padding: 0;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease;
+}
+
+.button--icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border-radius: 0.25rem;
+}
+
+.button--icon:focus,
+.button--icon:hover {
+  background-color: #ededed;
+}
+
+.button--primary {
+  background-color: #007dab;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.button--primary:hover {
+  background-color: #006489;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input + .input {
+  margin-top: 1.75rem;
+}
+
+.input__label {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.input__field {
+  display: block;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 0.75rem 0.75rem;
+  transition: 0.15s ease;
+}
+
+.input__field:focus {
+  outline: none;
+  border-color: #007dab;
+  box-shadow: 0 0 0 1px #007dab, 0 0 0 4px rgba(0, 125, 171, 0.25);
+}
+
+.input__field--textarea {
+  min-height: 100px;
+  max-width: 100%;
+}
+
+.input__description {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #8d8d8d;
+}
+
+/* Bảo quản */
+.product__detail-preserve {
+  background-color: #c5ecf4;
+  padding: 60px 0;
+  margin-top: 50px;
+}
+.detail__preserve-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  align-items: center;
+  text-align: center;
+}
+
+.product__detail-preserve h2 {
+  text-align: center;
+  font-size: 36px;
+}
+.product__detail-preserve img {
+  width: 100px;
+  height: 100px;
+}
+.detail__preserve-box  {
+  
+}

@@ -44,11 +44,12 @@ a {
 }
 .header-main img {
   width: 120px;
-  height: 120px;
+  height: 100px;
+  object-fit: cover;
 }
 .header-list {
   display: flex;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 .header-list a {
   margin-right: 5px;
