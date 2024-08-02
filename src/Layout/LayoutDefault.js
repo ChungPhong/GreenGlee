@@ -1,6 +1,7 @@
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import logo1 from "../../src/components/img/logo1.png";
+import logo3 from "../../src/components/img/logo3.png";
 import "./LayoutDefault.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -28,7 +29,7 @@ function LayoutDefault() {
       <header className="header">
         <div className="header-main">
           <a onClick={handleLogoClick}>
-            <img alt="logo" src={logo1} />
+            <img alt="logo" src={logo3} />
           </a>
 
           <ul className="header-list">
