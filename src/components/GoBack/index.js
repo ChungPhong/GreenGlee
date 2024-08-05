@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./GoBack.css";
 function GoBack() {
   const navigate = useNavigate();
-  console.log(navigate);
+
   const handleClick = () => {
     navigate(-1);
   };

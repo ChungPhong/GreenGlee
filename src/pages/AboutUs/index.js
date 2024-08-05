@@ -111,9 +111,9 @@ function AboutUs() {
               />
             </div>
 
-            <div className="about__partner-item">
+            <div className="about__partner-item about__partner-items">
               <img
-                src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2F113x110%2F20221207172634_3692_1670408794.5966.png&w=1920&q=75"
+                src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2F20221126095535_3692_1669431335.4431.png&w=1920&q=75"
                 alt="partner"
               />
             </div>

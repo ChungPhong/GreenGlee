@@ -5,10 +5,11 @@ import "./ProductDetail.css";
 import { useRef, useState } from "react";
 import Swal from "sweetalert2";
 import GoBack from "../../components/GoBack";
+import ProductButton from "./ProductButton";
 
 function ProductDetail() {
   const { productId } = useParams();
-  console.log(productId);
+
   const product = productData.find((item) => item.id === productId);
   const [value, setValue] = useState(1);
   const inputRef = useRef();
@@ -131,8 +132,9 @@ function ProductDetail() {
           <p className="detail__main-category">
             Category: <Link to="/products">{product.Category}</Link>
           </p>
-          <p className="detail__main-value">{product.price}</p>
-          <span className="detail__main-packaging">500 chiếc</span>
+          {/* <p className="detail__main-value">{product.price}</p> */}
+          {/* <span className="detail__main-packaging">500 chiếc</span> */}
+          <ProductButton product={product} />
           <h3 className="detail__main-quatiny">Số lượng</h3>
           <div className="detail__main-button">
             <button onClick={decreaseValue}>-</button>

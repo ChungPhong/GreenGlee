@@ -1,13 +1,38 @@
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import { Link, NavLink, Outlet } from "react-router-dom";
-import logo1 from "../../src/components/img/logo1.png";
+import uc2 from "../components/img/uc2.png";
 import logo3 from "../../src/components/img/logo3.png";
 import "./LayoutDefault.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 function LayoutDefault() {
   const location = useLocation();
   const navigate = useNavigate();
+
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isHiddenOnce, setIsHiddenOnce] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // Cuộn xuống
+        setShowNavbar(false);
+        setIsHiddenOnce(true);
+      } else {
+        // Cuộn lên
+        setShowNavbar(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Dọn dẹp khi component bị unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
   useEffect(() => {
     if (location.pathname === "/") {
       window.scrollTo(0, 0);
@@ -26,7 +51,7 @@ function LayoutDefault() {
   };
   return (
     <>
-      <header className="header">
+      <header className={`header ${showNavbar ? "visible" : "hidden"}`}>
         <div className="header-main">
           <a onClick={handleLogoClick}>
             <img alt="logo" src={logo3} />
@@ -62,10 +87,7 @@ function LayoutDefault() {
               src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fcdn.eraweb.dev%2Fflags%2Fvi.png&w=1920&q=75"
               alt="flag"
             />
-            <img
-              src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fcdn.eraweb.dev%2Fflags%2Fen.png&w=1920&q=75"
-              alt="flag"
-            />
+            <img src={uc2} alt="flag" />
           </div>
         </div>
       </header>

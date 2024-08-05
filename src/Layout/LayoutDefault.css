@@ -10,6 +10,7 @@ h4 {
   margin: 0;
   padding: 0;
 }
+
 h4 {
   margin: 0;
   padding: 0;
@@ -33,6 +34,15 @@ a {
   top: 0;
   position: sticky;
   z-index: 999;
+  transition: top 0.3s ease-in-out;
+}
+
+.header.visible {
+  top: 0;
+}
+
+.header.hidden {
+  top: -120px;
 }
 .header-main {
   display: flex;
@@ -304,12 +314,11 @@ a {
 .main-buy {
   margin-top: 100px !important;
   padding: 50px 0;
-  background-color: #ffcfdd;
+  background-color: #c5ecf4;
 }
 .buy__row {
   display: flex;
   justify-content: space-between;
-
   text-align: center;
 }
 .buy__row img {
@@ -323,6 +332,7 @@ a {
 }
 .buy__item {
   position: relative;
+  width: 30%;
 }
 .buyt__title {
   margin-top: 10px;
