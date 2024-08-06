@@ -2,7 +2,7 @@ import "./ProductButton.css";
 import { useState, useRef, useEffect } from "react";
 function ProductButton(props) {
   const { product } = props;
-  const [price, setPrice] = useState("1,233đ"); // Giá tiền mặc định
+  const [price, setPrice] = useState(product.price1); // Giá tiền mặc định
   const [activeButton, setActiveButton] = useState("button1"); // Đặt giá trị mặc định là 'button1'
   const button1Ref = useRef(null); // Tạo ref cho Button 1
   useEffect(() => {
@@ -30,7 +30,9 @@ function ProductButton(props) {
           className={
             activeButton === "button1" ? "btn-test btn active" : "btn-test"
           }
-          onClick={() => handleButtonClick("1,233 đ", "button1", button1Ref)}
+          onClick={() =>
+            handleButtonClick(product.price1.toString(), "button1", button1Ref)
+          }
         >
           1 chiếc
         </button>
