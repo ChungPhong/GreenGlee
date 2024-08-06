@@ -1,10 +1,7 @@
-.price-container {
-  margin-bottom: 10px; /* Khoảng cách giữa giá tiền và button */
-}
-.button {
+.btn-test {
   border-radius: 5px;
 }
-.btn {
+.btn-test {
   margin-top: 15px;
   display: inline-block;
   padding: 10px 20px;
@@ -16,7 +13,7 @@
   color: #333333;
 }
 
-.btn.active {
+.btn-test.active {
   border: 2px solid #000;
   background-color: #e0e0e0;
 }

@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 import Swal from "sweetalert2";
 import GoBack from "../../components/GoBack";
 import ProductButton from "./ProductButton";
-
+import { Image } from "antd";
 function ProductDetail() {
   const { productId } = useParams();
 
@@ -55,7 +55,11 @@ function ProductDetail() {
       <GoBack />
       <div className="product__detail-main content">
         <div className="detail__main-left">
-          <img src={product.imageUrl} alt={product.title} />
+          <Image
+            className="img-pre"
+            src={product.imageUrl}
+            alt={product.title}
+          />
           <h2>Đánh giá sản phẩm</h2>
           <div class="rating">
             <input type="radio" id="star-1" name="star-radio" value="star-1" />
@@ -108,12 +112,18 @@ function ProductDetail() {
             <div class="modal">
               <div class="modal__body">
                 <div class="input">
-                  <label class="input__label">Email</label>
-                  <input ref={inputRef1} class="input__field" type="text" />
+                  <label class="input__label">Địa chỉ Email</label>
+                  <input
+                    placeholder="Ví dụ: Levan@gmail.com"
+                    ref={inputRef1}
+                    class="input__field"
+                    type="text"
+                  />
                 </div>
                 <div class="input">
-                  <label class="input__label">Description</label>
+                  <label class="input__label">Nhận xét</label>
                   <textarea
+                    placeholder="Ví dụ: Sản phẩm chất lượng"
                     ref={inputRef}
                     class="input__field input__field--textarea"
                   ></textarea>
@@ -154,6 +164,35 @@ function ProductDetail() {
             kích thước vừa vặn{product.description}dễ dàng mang theo khi đi du
             lịch, dã ngoại cùng gia đình và bạn bè.
           </p>
+        </div>
+      </div>
+
+      <div className="main-whyperson">
+        <h2 className="whyperson__title">
+          Tại sao mọi người chọn sản phẩm mo cau từ Green Glee?
+        </h2>
+        <div className="whyperson__row content">
+          <div className="whyperson__item">
+            <img src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2FAUTOxAUTO%2F20221206115858_29_1670302738.3616.png&w=1920&q=75" />
+            <p className="whyperson__desc">
+              100% tự nhiên & Phân huỷ hoàn toàn
+            </p>
+          </div>
+
+          <div className="whyperson__item">
+            <img src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2FAUTOxAUTO%2F20221206115858_29_1670302738.5014.png&w=1920&q=75" />
+            <p className="whyperson__desc">Phát triển tái sinh</p>
+          </div>
+
+          <div className="whyperson__item">
+            <img src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2FAUTOxAUTO%2F20221208112027_29_1670473227.0124.png&w=1920&q=75" />
+            <p className="whyperson__desc">Sạch từ nông trại tới bàn ăn</p>
+          </div>
+
+          <div className="whyperson__item">
+            <img src="https://greenjoystraw.com/_next/image?url=https%3A%2F%2Fd24rsy7fvs79n4.cloudfront.net%2Fgreenjoystraw.eraweb.net%2FAUTOxAUTO%2F20221206115910_29_1670302750.2521.png&w=1920&q=75" />
+            <p className="whyperson__desc">Thương mại công bằng</p>
+          </div>
         </div>
       </div>
 

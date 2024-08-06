@@ -27,13 +27,17 @@ function ProductButton(props) {
       <div>
         <button
           ref={button1Ref} // Gán ref cho Button 1
-          className={activeButton === "button1" ? "btn active" : "btn"}
+          className={
+            activeButton === "button1" ? "btn-test btn active" : "btn-test"
+          }
           onClick={() => handleButtonClick("1,233 đ", "button1", button1Ref)}
         >
           1 chiếc
         </button>
         <button
-          className={activeButton === "button2" ? "btn active" : "btn"}
+          className={
+            activeButton === "button2" ? "btn-test btn active" : "btn-test"
+          }
           onClick={() =>
             handleButtonClick(product.price.toString(), "button2", null)
           }

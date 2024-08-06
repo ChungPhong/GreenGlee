@@ -6,3 +6,6 @@ body {
 * {
   box-sizing: border-box;
 }
+textarea {
+  resize: none; /* Tắt tính năng thay đổi kích thước */
+}

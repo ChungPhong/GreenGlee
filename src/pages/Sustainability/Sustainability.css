@@ -11,12 +11,12 @@
   left: 9%;
 }
 .sustainability-bg img {
-  height: 300px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 .content {
-  width: 1100px;
+  max-width: 1100px;
   margin: auto;
 }
 .sustainability-corevalues {

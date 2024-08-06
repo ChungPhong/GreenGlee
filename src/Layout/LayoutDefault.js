@@ -47,12 +47,12 @@ function LayoutDefault() {
     }
   };
   const newActive = (e) => {
-    return e.isActive ? "menu__link--active" : "menu__link";
+    return e.isActive ? "menu__link menu__link--active" : "menu__link";
   };
   return (
     <>
       <header className={`header ${showNavbar ? "visible" : "hidden"}`}>
-        <div className="header-main">
+        <div className="header-main content">
           <a onClick={handleLogoClick}>
             <img alt="logo" src={logo3} />
           </a>
@@ -96,7 +96,9 @@ function LayoutDefault() {
         <Outlet />
       </main>
       <footer className="footer">
-        Copyright © 2024 Green Glee. All Rights Reserved. Built with Eraweb.
+        <div className="footer__title ">
+          Copyright © 2024 Green Glee. All Rights Reserved. Built with Eraweb.
+        </div>
       </footer>
     </>
   );

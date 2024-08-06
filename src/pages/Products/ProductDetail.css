@@ -15,7 +15,7 @@
   margin-top: 10px;
   font-size: 30px;
 }
-.detail__main-left img {
+.detail__main-left .img-pre {
   border-radius: 5px;
   width: 450px;
   height: 500px;
@@ -367,9 +367,8 @@
 
 /* Bảo quản */
 .product__detail-preserve {
-  background-color: #c5ecf4;
+  background-color: #fffac4;
   padding: 60px 0;
-  margin-top: 50px;
 }
 .detail__preserve-box {
   display: flex;

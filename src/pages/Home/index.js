@@ -10,46 +10,48 @@ function Home() {
       </div>
       {/* main social */}
       <div className="main__social">
-        <div className="main__social-left">
-          <div className="main__box">
-            <h1 className="main__title">
-              Giảm thiểu đồ nhựa dùng 1 lần bằng nguyên liệu thiên nhiên làm từ
-              mo cau.
-            </h1>
-            <p className="main__desc">
-              Cung cấp đồ dùng từ mo cau và các dụng cụ cho bàn ăn và nhà bếp
-              làm từ mo cau
-            </p>
+        <div className="row content">
+          <div className="main__social-left">
+            <div className="main__box">
+              <h1 className="main__title">
+                Giảm thiểu đồ nhựa dùng 1 lần bằng nguyên liệu thiên nhiên làm
+                từ mo cau.
+              </h1>
+              <p className="main__desc">
+                Cung cấp đồ dùng từ mo cau và các dụng cụ cho bàn ăn và nhà bếp
+                làm từ mo cau
+              </p>
+            </div>
+            <div className="main__btn">
+              <a
+                target="_blank"
+                className="btn btn__shopee"
+                href="https://shopee.vn/"
+              >
+                Shopee
+              </a>
+              <a
+                target="_blank"
+                className="btn  btn__tiki"
+                href="https://tiki.vn/"
+              >
+                Tiki
+              </a>
+              <a
+                target="_blank"
+                className="btn  btn__amazon"
+                href="https://Amazon.vn/"
+              >
+                Amazon
+              </a>
+            </div>
           </div>
-          <div className="main__btn">
-            <a
-              target="_blank"
-              className="btn btn__shopee"
-              href="https://shopee.vn/"
-            >
-              Shopee
-            </a>
-            <a
-              target="_blank"
-              className="btn  btn__tiki"
-              href="https://tiki.vn/"
-            >
-              Tiki
-            </a>
-            <a
-              target="_blank"
-              className="btn  btn__amazon"
-              href="https://Amazon.vn/"
-            >
-              Amazon
-            </a>
+          <div className="main__social-right">
+            <img
+              alt="photo"
+              src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/11/28/858012/Khoi-Nghiep-Tu-Mo-Ca-05.jpg"
+            />
           </div>
-        </div>
-        <div className="main__social-right">
-          <img
-            alt="photo"
-            src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/11/28/858012/Khoi-Nghiep-Tu-Mo-Ca-05.jpg"
-          />
         </div>
       </div>
       {/* main person */}
